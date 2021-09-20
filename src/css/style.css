@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 1020px;
+  background-color: blue;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+
+  border-radius: 10px;
+}
+
+.column {
+  width: 320px;
+  margin-right: 20px;
+  padding: 10px 10px 10px 10px;
+
+  background-color: #cccccc;
+  border-radius: 10px;
+}
+
+.container-button {
+  display: flex;
+  position: relative;
+}
+
+.button {
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-card {
+  width: 80px;
+  padding: 5px;
+  margin-right: 20px;
+
+  background-color: green;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.button-reset-card {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.container-title {
+  padding-bottom: 20px;
+}
+
+.button-item-card-remove {
+  display: none;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 1px 3px;
+
+  align-self: flex-start;
+  margin-left: auto;
+}
+
+.button-item-card-remove:hover {
+  background-color: #999999;
+  color: #ffffff;
+}
+
+.card-item:hover .button-item-card-remove {
+  display: block;
+}
+
+.title {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.column.margin-right-none {
+  margin-right: 0;
+}
+
+.card {
+  background-color: #ffffff;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 100px;
+  padding: 10px;
+  margin-bottom: 15px;
+
+  border-radius: 10px;
+}
+
+.card:focus {
+  border: 1px solid #a4a4a4;
+  outline: none;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.container-cards {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card-item {
+  position: relative;
+  display: flex;
+
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 15px;
+
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.card-item-dragged {
+  position: absolute;
+  width: 300px;
+  z-index: 999999;
+  /*pointer-events: none;*/
+
+  background-color: #ffffff;
+  cursor: grabbing;
+}
+
+.none {
+  display: none;
+}
+
+.under-drag {
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 7px;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 5px;
+
+  top: 40px;
+  left: -12px;
+
+  background-color: lavender;
+  border-radius: 5px;
+}
+
+.new-drag {
+  background-color: #7b7b7b;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 7px;
+}
